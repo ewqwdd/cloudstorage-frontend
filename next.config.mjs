@@ -11,7 +11,7 @@ const nextConfig = {
       images: {
         remotePatterns: [
           {
-            hostname: 'localhost'
+            hostname: process.env.NEXT_PUBLIC_API_URL
           }
         ]
       }
