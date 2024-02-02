@@ -34,10 +34,10 @@ export default memo(
       fileHeader = <DeletedIcon className="aspect-square object-contain" />;
     } else if (file.mimetype.includes("image")) {
       fileHeader = (
-        <Image
+        <img
           src={process.env.NEXT_PUBLIC_API_URL + "uploads/" + file.filename}
           alt={"img"}
-          fill
+          loading="lazy"
           className="object-cover"
         />
       );
