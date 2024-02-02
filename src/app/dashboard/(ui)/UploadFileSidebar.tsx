@@ -12,6 +12,7 @@ export default memo(function UploadFileSidebar() {
   const { add } = useNotify();
   const router = useRouter();
   const [progress, setProgress] = useState<number>(0);
+  
   const onSubmit = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
       const at = session.data?.user.access_token;
