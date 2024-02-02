@@ -1,0 +1,21 @@
+.notification {
+    animation: openning 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 320px;
+}
+
+.closing {
+    transform: translate(120%, 0);
+    opacity: 0;
+}
+
+@keyframes openning {
+    0% {
+        opacity: 0;
+        transform: translate(120%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
