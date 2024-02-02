@@ -38,7 +38,7 @@ export default memo(
           src={process.env.NEXT_PUBLIC_API_URL + "uploads/" + file.filename}
           alt={"img"}
           loading="lazy"
-          className="object-cover"
+          className="object-cover absolute"
         />
       );
     } else {
